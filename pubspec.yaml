@@ -1,0 +1,79 @@
+name: e_store
+description: "A new Flutter project."
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.3
+#--------Packages----------#
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Utility Packages
+  http: ^1.6.0
+  intl: ^0.20.2
+  logger: ^2.7.0
+  url_launcher: ^6.3.2
+  flutter_native_splash: ^2.4.7
+  smooth_page_indicator: ^2.0.1
+
+
+
+  #Icons
+  iconsax: ^0.0.8
+  cupertino_icons: ^1.0.8
+
+  #State Management
+  get: ^4.7.3
+  get_storage: ^2.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  
+  flutter_lints: ^6.0.0
+
+
+flutter:
+
+  
+  uses-material-design: true
+
+#---------------Local Assets-------------
+  assets:
+    - assets/logos/
+    - assets/icons/
+    - assets/images/on_boarding_images/
+
+#--------------Local Fonts--------------
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-BoldItalic.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Italic.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-LightItalic.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-SemiBoldItalic.ttf
+          weight: 800
+        - asset: assets/fonts/Coolvetica_regular.otf
+          weight: 600
+        - asset: assets/fonts/Coolvetica_regularItalic.otf
+          weight: 600
+
+ 
