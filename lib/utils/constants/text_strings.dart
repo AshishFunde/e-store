@@ -30,12 +30,14 @@ class ETexts {
   static const String rememberme = 'Remember me';
   static const String forgetPassword= 'Forget Password';
   static const String signIn= 'SignIn';
+  static const String signUp= 'SignUp';
   static const String createAccount = 'Create Account';
   static const String orSignInWith= 'or sign in with';
   static const String orSignUpWith= 'or sign Up with';
   static const String iAgreeTo= 'I agree to';
   static const String privacyPolicy= 'Privacy Policy';
-  static const String tearmsOfUse= 'Tearms of USe';
+  static const String and= 'and';
+  static const String termsOfUse= 'Terms of USe';
   static const String verificationCode= 'Verification Code';
   static const String resendEmail= 'Resend Email';
   static const String resendEmailIn= 'Resend email in';
@@ -44,7 +46,7 @@ class ETexts {
   static const String loginTitle = 'Welcome back,';
   static const String loginSubTitle =
       'Discover Limitless Choices and Unmatched \n Convenience.';
-  static const String signUp= 'Lets create your account';
+  static const String signUpTitle= 'Lets create your account';
   static const String forgetPasswordTitle= 'Forget password';
   static const String forgetPasswordSubTitle= 'Dont worry sometimes people can forget too, enter email and will send you password link.';
   static const String changeYourPasswordTitle= 'Password Reset email sent';
