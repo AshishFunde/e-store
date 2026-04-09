@@ -18,43 +18,51 @@ class ETexts {
   static const String homeAppBarSubTitle = "Ashish Funde";
 
   //logintitle
-  
+
   //Authentication Form Text
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
   static const String email = 'E-mail';
   static const String password = 'Password';
   static const String newPassword = 'New Password';
-  static const String username= 'Username';
-  static const String phoneNumber= 'Phone Number';
+  static const String username = 'Username';
+  static const String phoneNumber = 'Phone Number';
   static const String rememberme = 'Remember me';
-  static const String forgetPassword= 'Forget Password';
-  static const String signIn= 'SignIn';
-  static const String signUp= 'SignUp';
+  static const String forgetPassword = 'Forget Password';
+  static const String signIn = 'SignIn';
+  static const String signUp = 'SignUp';
   static const String createAccount = 'Create Account';
-  static const String orSignInWith= 'or sign in with';
-  static const String orSignUpWith= 'or sign Up with';
-  static const String iAgreeTo= 'I agree to';
-  static const String privacyPolicy= 'Privacy Policy';
-  static const String and= 'and';
-  static const String termsOfUse= 'Terms of USe';
-  static const String verificationCode= 'Verification Code';
-  static const String resendEmail= 'Resend Email';
-  static const String resendEmailIn= 'Resend email in';
+  static const String orSignInWith = 'or sign in with';
+  static const String orSignUpWith = 'or sign Up with';
+  static const String iAgreeTo = 'I agree to';
+  static const String privacyPolicy = 'Privacy Policy';
+  static const String and = 'and';
+  static const String termsOfUse = 'Terms of USe';
+  static const String verificationCode = 'Verification Code';
+  static const String resendEmail = 'Resend Email';
+  static const String resendEmailIn = 'Resend email in';
+  static const String eContinue = 'Continue';
+  static const String done = 'Done';
+  static const String submit = 'Submit';
 
   //Authentication Heading text
   static const String loginTitle = 'Welcome back,';
   static const String loginSubTitle =
       'Discover Limitless Choices and Unmatched \n Convenience.';
-  static const String signUpTitle= 'Lets create your account';
-  static const String forgetPasswordTitle= 'Forget password';
-  static const String forgetPasswordSubTitle= 'Dont worry sometimes people can forget too, enter email and will send you password link.';
-  static const String changeYourPasswordTitle= 'Password Reset email sent';
-  static const String changeYourPasswordSubTitle= 'Your Account Secutity is out Priority! WE have Sent you Link to safely change your password and keep your acoount password.';
-  static const String confirmEmail= 'Verify Your Email Address';
-  static const String confirmEmailSubtitle= 'Congratulation! Your Account Awaits: Verify Your Email to Start Shopping and Experience a World of Unrivales Deals and Persinalized Offers.';
-  static const String emailNotReceivedMessgae= "Didn't get the email?Check Your junk/span or resend it.";
-  static const String yourAccountCreatedTitle= 'Your Account successfully created!';
-  static const String yourAccountCreatedSubTitle= 'Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping';
-
+  static const String signUpTitle = 'Lets create your account';
+  static const String forgetPasswordTitle = 'Forget password';
+  static const String forgetPasswordSubTitle =
+      'Dont worry sometimes people can forget too, enter email and will send you password link.';
+  static const String changeYourPasswordTitle = 'Password Reset email sent';
+  static const String changeYourPasswordSubTitle =
+      'Your Account Secutity is out Priority! WE have Sent you Link to safely change your password and keep your acoount password.';
+  static const String confirmEmail = 'Verify Your Email Address';
+  static const String confirmEmailSubtitle =
+      'Congratulation! Your Account Awaits: Verify Your Email to Start Shopping and Experience a World of Unrivales Deals and Persinalized Offers.';
+  static const String emailNotReceivedMessgae =
+      "Didn't get the email?Check Your junk/span or resend it.";
+  static const String yourAccountCreatedTitle =
+      'Your Account successfully created!';
+  static const String yourAccountCreatedSubTitle =
+      'Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping';
 }

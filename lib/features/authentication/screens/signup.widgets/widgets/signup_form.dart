@@ -1,4 +1,4 @@
-import 'package:e_store/features/authentication/screens/login/login.dart';
+import 'package:e_store/features/authentication/screens/signup.widgets/verify_email.dart';
 import 'package:e_store/features/authentication/screens/signup.widgets/widgets/terms_conditon_checkbox.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
@@ -9,12 +9,7 @@ import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ESignUpForm extends StatelessWidget {
-  const ESignUpForm({
-    super.key,
-    
-  });
-
-  
+  const ESignUpForm({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -80,16 +75,16 @@ class ESignUpForm extends StatelessWidget {
           SizedBox(height: ESizes.spacebtwInputFields),
           //Tearms&Conditions Checkbox
           ETermsAndConditionCheckbox(),
-          SizedBox (height:ESizes.spacebtwInputFields),
+          SizedBox(height: ESizes.spacebtwInputFields),
           //SignUp Button
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () => Get.to(() => const LoginScreen()),
+              onPressed: () => Get.to(() => VerifyEmailScreen()),
               style: ElevatedButton.styleFrom(
-        backgroundColor: EColors.buttonPrimary,
-      ),
-              child: Text(ETexts.createAccount,),
+                backgroundColor: EColors.buttonPrimary,
+              ),
+              child: Text(ETexts.createAccount),
             ),
           ),
         ],
@@ -97,4 +92,3 @@ class ESignUpForm extends StatelessWidget {
     );
   }
 }
-

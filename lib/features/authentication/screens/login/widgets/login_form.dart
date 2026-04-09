@@ -1,3 +1,5 @@
+import 'package:e_store/features/authentication/screens/password_configuration/forget_password.dart';
+import 'package:e_store/features/authentication/screens/password_configuration/reset_password.dart';
 import 'package:e_store/features/authentication/screens/signup.widgets/signup.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
@@ -51,7 +53,7 @@ class ELoginForm extends StatelessWidget {
                 ),
                 //Forget Password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: ()=>Get.to(()=> ForgetPassword()) ,
                   child: Text(ETexts.forgetPassword),
                 ),
               ],
