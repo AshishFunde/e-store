@@ -1,6 +1,6 @@
 import 'package:e_store/features/authentication/screens/password_configuration/forget_password.dart';
-import 'package:e_store/features/authentication/screens/password_configuration/reset_password.dart';
 import 'package:e_store/features/authentication/screens/signup.widgets/signup.dart';
+import 'package:e_store/navigation_menu.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/constants/text_strings.dart';
@@ -64,7 +64,7 @@ class ELoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(()=>NavigationMenu()),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: EColors.buttonPrimary,
                 ),
