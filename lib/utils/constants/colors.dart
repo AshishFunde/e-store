@@ -21,7 +21,7 @@ class EColors {
   //Text Colors
   static const Color textPrimary = Color(0xFF333333);
   static const Color textsecondary = Color(0xFF6C767D);
-  static const Color textaccent = Colors.white;
+  static const Color textWhite = Colors.white;
 
   //BackGround Colors
   static const Color light = Color(0xFFF6F6F6);

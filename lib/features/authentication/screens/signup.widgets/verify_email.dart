@@ -1,4 +1,4 @@
-import 'package:e_store/common/success_screen/success_screen.dart';
+import 'package:e_store/common/widgets/success_screen/success_screen.dart';
 import 'package:e_store/features/authentication/screens/login/login.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
