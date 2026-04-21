@@ -3,11 +3,11 @@ import 'package:e_store/common/widgets/custom_shapes/container/search_container.
 import 'package:e_store/common/widgets/texts/section_heading.dart';
 import 'package:e_store/features/shop/screens/home/widget/home_appbar.dart';
 import 'package:e_store/features/shop/screens/home/widget/home_categories.dart';
+import 'package:e_store/features/shop/screens/home/widget/promo_slider.dart';
 import 'package:e_store/utils/constants/colors.dart';
+import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
-
 import 'package:flutter/material.dart';
-
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -51,13 +51,20 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+
+            // Body
+            Padding(
+              padding: const EdgeInsets.all(ESizes.defaultSpace),
+              child: EPromoSlider(banners: [
+                EImages.promoBanner1,
+                EImages.promoBanner2,
+                EImages.promoBanner3
+              ],),
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-
-
 

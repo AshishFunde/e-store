@@ -28,13 +28,25 @@ class EImages {
   static const String verifyIllustration = '';
 
   //categories
-  static const String sportIcon = 'assets/icons/categories/icons8-bowling-64.png';
-  static const String clothIcon = 'assets/icons/categories/icons8-tailors-dummy-64.png';
+  static const String sportIcon =
+      'assets/icons/categories/icons8-bowling-64.png';
+  static const String clothIcon =
+      'assets/icons/categories/icons8-tailors-dummy-64.png';
   static const String shoeIcon = 'assets/icons/categories/icons8-shoes-64.png';
-  static const String cosmeticsIcon = 'assets/icons/categories/icons8-cosmatics-64.png';
-  static const String animalIcon = 'assets/icons/categories/icons8-dog-heart-64.png';
-  static const String toyIcon = 'assets/icons/categories/icons8-wooden-toy-car-64.png';
-  static const String frunitureIcon = 'assets/icons/categories/icons8-dining-chair-64.png';
-  static const String jeweleryIcon = 'assets/icons/categories/icons8-sparkling-dimondr-64.png';
-  static const String electronicsIcon = 'assets/icons/categories/icons8-smartphone-64.png';
+  static const String cosmeticsIcon =
+      'assets/icons/categories/icons8-cosmatics-64.png';
+  static const String animalIcon =
+      'assets/icons/categories/icons8-dog-heart-64.png';
+  static const String toyIcon =
+      'assets/icons/categories/icons8-wooden-toy-car-64.png';
+  static const String frunitureIcon =
+      'assets/icons/categories/icons8-dining-chair-64.png';
+  static const String jeweleryIcon =
+      'assets/icons/categories/icons8-sparkling-dimondr-64.png';
+  static const String electronicsIcon =
+      'assets/icons/categories/icons8-smartphone-64.png';
+
+  static const String promoBanner1 = 'assets/images/banners/promo-banner1.png';
+  static const String promoBanner2 = 'assets/images/banners/promo-banner2.png';
+  static const String promoBanner3 = 'assets/images/banners/promo-bannner3.png';
 }
