@@ -1,5 +1,7 @@
 import 'package:e_store/common/widgets/custom_shapes/container/primary_header_container.dart';
 import 'package:e_store/common/widgets/custom_shapes/container/search_container.dart';
+import 'package:e_store/common/widgets/layouts/grid_layout.dart';
+import 'package:e_store/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:e_store/common/widgets/texts/section_heading.dart';
 import 'package:e_store/features/shop/screens/home/widget/home_appbar.dart';
 import 'package:e_store/features/shop/screens/home/widget/home_categories.dart';
@@ -55,11 +57,22 @@ class HomeScreen extends StatelessWidget {
             // Body
             Padding(
               padding: const EdgeInsets.all(ESizes.defaultSpace),
-              child: EPromoSlider(banners: [
-                EImages.promoBanner1,
-                EImages.promoBanner2,
-                EImages.promoBanner3
-              ],),
+              child: Column(
+                children: [
+                  EPromoSlider(
+                    banners: [
+                      EImages.promoBanner1,
+                      EImages.promoBanner2,
+                      EImages.promoBanner3,
+                    ],
+                  ),
+                  SizedBox(height: ESizes.spaceBtwSections),
+
+                  //Popular products
+                  EGridLayout(itemCount: 10, itemBuilder: (_,index)=> EProductCardVertical()),
+                 
+                ],
+              ),
             ),
           ],
         ),
@@ -67,4 +80,5 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
 
