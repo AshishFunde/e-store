@@ -5,12 +5,12 @@ class EGridLayout extends StatelessWidget {
   const EGridLayout({
     super.key,
     required this.itemCount,
-    this.mainAxisAlignment= 288,
+    this.mainAxisExtent= 288,
     required this.itemBuilder,
   });
 
   final int itemCount;
-  final double? mainAxisAlignment;
+  final double? mainAxisExtent;
   final Widget? Function(BuildContext, int) itemBuilder;
 
   @override
@@ -24,7 +24,7 @@ class EGridLayout extends StatelessWidget {
         crossAxisCount: 2,
         mainAxisSpacing: ESizes.gridViewSpacing,
         crossAxisSpacing: ESizes.gridViewSpacing,
-        mainAxisExtent: mainAxisAlignment,
+        mainAxisExtent: mainAxisExtent,
       ),
       itemBuilder:itemBuilder,
     );

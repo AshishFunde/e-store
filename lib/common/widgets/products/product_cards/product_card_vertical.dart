@@ -3,6 +3,7 @@ import 'package:e_store/common/widgets/custom_shapes/container/rounded_container
 import 'package:e_store/common/widgets/icons/e_circular_icon.dart';
 import 'package:e_store/common/widgets/images/e_rounded_image.dart';
 import 'package:e_store/common/widgets/products/product_cards/product_price_text.dart';
+import 'package:e_store/common/widgets/texts/e_brand_titile_text_with_verified_Icon.dart' show EBrandTitleTextWithVerifiedIcon;
 import 'package:e_store/common/widgets/texts/product_title_text.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
@@ -82,26 +83,18 @@ class EProductCardVertical extends StatelessWidget {
                     smallSize: true,
                   ),
                   SizedBox(height: ESizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        'Nike',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      SizedBox(width: ESizes.xs),
-                      Icon(
-                        Iconsax.verify5,
-                        color: EColors.primary,
-                        size: ESizes.iconsXs,
-                      ),
-                    ],
-                  ),
+                  EBrandTitleTextWithVerifiedIcon(title: 'Nike',), 
+                ],
+              ),
+            ),
+                Spacer(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      EProductPriceText(price: '5000',),
+                      Padding(
+                        padding: EdgeInsets.only(left: ESizes.sm),
+                        child: EProductPriceText(price: '5000',)),
+                      //Add cart button
                       Container(
                         decoration: BoxDecoration(
                           color: EColors.dark,
@@ -120,14 +113,13 @@ class EProductCardVertical extends StatelessWidget {
                       ),
                     ],
                   ),
-                ],
-              ),
-            ),
           ],
         ),
       ),
     );
   }
 }
+
+
 
 
