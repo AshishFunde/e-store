@@ -68,7 +68,7 @@ class ELoginForm extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: EColors.buttonPrimary,
                 ),
-                child: Text(ETexts.signIn),
+                child: Text(ETexts.login),
               ),
             ),
             SizedBox(height: ESizes.spaceBtwItems,),

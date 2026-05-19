@@ -29,7 +29,7 @@ class ETexts {
   static const String phoneNumber = 'Phone Number';
   static const String rememberme = 'Remember me';
   static const String forgetPassword = 'Forget Password';
-  static const String signIn = 'SignIn';
+  static const String login = 'Login';
   static const String signUp = 'SignUp';
   static const String createAccount = 'Create Account';
   static const String orSignInWith = 'or sign in with';
