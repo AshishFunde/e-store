@@ -5,11 +5,14 @@ import 'package:e_store/common/widgets/images/e_rounded_image.dart';
 import 'package:e_store/common/widgets/products/product_cards/product_price_text.dart';
 import 'package:e_store/common/widgets/texts/e_brand_titile_text_with_verified_Icon.dart' show EBrandTitleTextWithVerifiedIcon;
 import 'package:e_store/common/widgets/texts/product_title_text.dart';
+import 'package:e_store/features/shop/screens/product_deatils/product_deatil.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:iconsax/iconsax.dart';
 
 class EProductCardVertical extends StatelessWidget {
@@ -20,7 +23,7 @@ class EProductCardVertical extends StatelessWidget {
     final dark = EHelperFunctions.isDarkMode(context);
     // Container with side paddings,color,edges,radius and shadow
     return GestureDetector(
-      onTap: (){},
+      onTap: ()=> Get.to(() => const ProductDeatil()),
       child: Container(
         width: 180,
         padding: EdgeInsets.all(1),
