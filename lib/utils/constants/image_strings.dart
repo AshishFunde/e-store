@@ -74,4 +74,7 @@ class EImages {
       'assets/images/product_images/product10.png';
   static const String productImage11 =
       'assets/images/product_images/product11.png';
+
+  static const String userProfileImage1 =
+      'assets/images/reviews/reviews_profile_image_1.jpg';
 }

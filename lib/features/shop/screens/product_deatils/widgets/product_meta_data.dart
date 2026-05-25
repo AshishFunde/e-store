@@ -15,7 +15,7 @@ class EProductMetaData extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = EHelperFunctions.isDarkMode(context);
+    // final dark = EHelperFunctions.isDarkMode(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -57,7 +57,7 @@ class EProductMetaData extends StatelessWidget {
         const SizedBox(height: ESizes.spaceBtwItems/1.5),
         Row(
           children: [
-            ECircularImage(image: EImages.shoeIcon,),
+            ECircularImage(image: EImages.toyIcon,),
             EBrandTitleTextWithVerifiedIcon(title: 'Nike',brandTextSize: TextSizes.medium,),
           ],
         )
