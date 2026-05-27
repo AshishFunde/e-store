@@ -29,6 +29,17 @@ class EImages {
       'assets/images/animations/emailanimation.gif';
   static const String verifyIllustration = '';
 
+  //Payment Methods
+  static const String applePay= 'assets/icons/payment_methods/apple_pay.png';
+  static const String creditCard= 'assets/icons/payment_methods/credit_card.png';
+  static const String googlePay= 'assets/icons/payment_methods/google_pay.png';
+  static const String masterCard= 'assets/icons/payment_methods/master_card.png';
+  static const String paypal= 'assets/icons/payment_methods/paypal.png';
+  static const String payStack= 'assets/icons/payment_methods/paystack.png';
+  static const String paytm= 'assets/icons/payment_methods/paytm.png';
+  static const String visa= 'assets/icons/payment_methods/visa.png';
+  static const String successdulPaymentIcon = 'assets/icons/payment_methods/payment_success.png';
+
   //categories
   static const String sportIcon =
       'assets/icons/categories/icons8-bowling-64.png';
