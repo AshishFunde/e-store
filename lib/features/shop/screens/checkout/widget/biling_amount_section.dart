@@ -12,7 +12,7 @@ class EBilingAmountSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text('Subtotal',style: Theme.of(context).textTheme.bodyMedium),
-            Text('\₹2500',style: Theme.of(context).textTheme.bodyMedium),
+            Text('₹2500',style: Theme.of(context).textTheme.bodyMedium),
           ],
         ),
         SizedBox(height: ESizes.spaceBtwItems/2,),
@@ -21,7 +21,7 @@ class EBilingAmountSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text('Shipping Fee',style: Theme.of(context).textTheme.bodyMedium),
-            Text('\₹60',style: Theme.of(context).textTheme.labelLarge),
+            Text('₹60',style: Theme.of(context).textTheme.labelLarge),
           ],
         ),
         SizedBox(height: ESizes.spaceBtwItems/2,),
@@ -30,7 +30,7 @@ class EBilingAmountSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text('Tax Fee',style: Theme.of(context).textTheme.bodyMedium),
-            Text('\₹60',style: Theme.of(context).textTheme.labelLarge),
+            Text('₹60',style: Theme.of(context).textTheme.labelLarge),
           ],
         ),
         SizedBox(height: ESizes.spaceBtwItems/2,),
@@ -39,7 +39,7 @@ class EBilingAmountSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text('Order Total',style: Theme.of(context).textTheme.bodyMedium),
-            Text('\₹60',style: Theme.of(context).textTheme.titleMedium),
+            Text('₹60',style: Theme.of(context).textTheme.titleMedium),
           ],
         ),
         SizedBox(height: ESizes.spaceBtwItems/2,),

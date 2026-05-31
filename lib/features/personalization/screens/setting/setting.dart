@@ -5,6 +5,8 @@ import 'package:e_store/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:e_store/common/widgets/texts/section_heading.dart';
 import 'package:e_store/features/personalization/screens/address/address.dart';
 import 'package:e_store/features/personalization/screens/profile/profile.dart';
+import 'package:e_store/features/shop/screens/cart/cart.dart';
+import 'package:e_store/features/shop/screens/orders/order.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -50,8 +52,8 @@ class SettingScreen extends StatelessWidget {
                   ESectionHeading(title: 'Account Setting',showActionButton: false,),
                   SizedBox(height: ESizes.spaceBtwItems),
                   ESettingsMenuTile(icon: Iconsax.safe_home,title: 'My Addresses',subTitle: 'Set shopping delivery address',onTap: ()=> Get.to(()=>UserAddressScreen()),),
-                  ESettingsMenuTile(icon: Iconsax.shopping_cart,title: 'My Cart',subTitle: 'Add, Remove products and move to checkout',onTap: (){},),
-                  ESettingsMenuTile(icon: Iconsax.bag_tick,title: 'My Orders',subTitle: 'In-progress and Completed Orders ',onTap: (){},),
+                  ESettingsMenuTile(icon: Iconsax.shopping_cart,title: 'My Cart',subTitle: 'Add, Remove products and move to checkout',onTap: ()=> Get.to(()=>CartScreen()),),
+                  ESettingsMenuTile(icon: Iconsax.bag_tick,title: 'My Orders',subTitle: 'In-progress and Completed Orders ',onTap: ()=> Get.to(()=> OrderScreen()),),
                   ESettingsMenuTile(icon: Iconsax.bank,title: 'Bank Account',subTitle: 'Withdraw balance to registered bank account a',onTap: (){},),
                   ESettingsMenuTile(icon: Iconsax.discount_shape,title: 'My Coupons',subTitle: 'List of all the discounted coupons',onTap: (){},),
                   ESettingsMenuTile(icon: Iconsax.notification,title: 'Notification',subTitle: 'Set any kind of notification message',onTap: (){},),

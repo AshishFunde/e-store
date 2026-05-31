@@ -36,7 +36,7 @@ class EProductAttributes extends StatelessWidget {
 
                           //Actual Price
                           Text(
-                            '\₹2500',
+                            '₹2500',
                             style: Theme.of(context).textTheme.titleSmall!
                                 .apply(decoration: TextDecoration.lineThrough),
                           ),

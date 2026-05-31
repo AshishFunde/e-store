@@ -1,9 +1,3 @@
-import 'package:e_store/common/widgets/app_bar/appbar.dart';
-import 'package:e_store/common/widgets/custom_shapes/container/rounded_container.dart';
-import 'package:e_store/common/widgets/custom_shapes/curved_edges/curved_edges.dart';
-import 'package:e_store/common/widgets/custom_shapes/curved_edges/curved_edges_widgets.dart';
-import 'package:e_store/common/widgets/icons/e_circular_icon.dart';
-import 'package:e_store/common/widgets/images/e_rounded_image.dart';
 import 'package:e_store/common/widgets/texts/section_heading.dart';
 import 'package:e_store/features/shop/screens/product_deatils/widgets/bottom_add_to_cart_widget.dart';
 import 'package:e_store/features/shop/screens/product_deatils/widgets/product_attributes.dart';
@@ -12,7 +6,6 @@ import 'package:e_store/features/shop/screens/product_deatils/widgets/product_me
 import 'package:e_store/features/shop/screens/product_deatils/widgets/rating_share_widget.dart';
 import 'package:e_store/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:e_store/utils/constants/colors.dart';
-import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -51,7 +44,7 @@ class ProductDeatil extends StatelessWidget {
                   EProductAttributes(),
                   SizedBox(height: ESizes.spaceBtwSections,),
                   //checkout button
-                  SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: Text('Checkout'),style: ElevatedButton.styleFrom(backgroundColor: EColors.primary,),)),
+                  SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){},style: ElevatedButton.styleFrom(backgroundColor: EColors.primary,), child: Text('Checkout'),)),
                   //description
                   SizedBox(height: ESizes.spaceBtwSections/4,),
                   ESectionHeading(title: 'Description'),

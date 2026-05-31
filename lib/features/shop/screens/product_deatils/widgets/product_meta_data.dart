@@ -7,7 +7,6 @@ import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
-import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class EProductMetaData extends StatelessWidget {
@@ -38,7 +37,7 @@ class EProductMetaData extends StatelessWidget {
             ),
             const SizedBox(width: ESizes.spaceBtwItems,),
             //price
-            Text('\₹2500',style:Theme.of(context).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough) ,),
+            Text('₹2500',style:Theme.of(context).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough) ,),
             const SizedBox(width: ESizes.spaceBtwItems,),
             EProductPriceText(price: '1900',isLarge: true,)
           ],

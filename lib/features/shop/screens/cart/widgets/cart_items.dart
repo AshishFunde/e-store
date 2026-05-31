@@ -13,7 +13,7 @@ class ECartItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
       shrinkWrap: true,
-      separatorBuilder: (_, __) =>
+      separatorBuilder: (_, _) =>
           const SizedBox(height: ESizes.spaceBtwSections),
       itemCount: 2,
       itemBuilder: (_, index) => Column(

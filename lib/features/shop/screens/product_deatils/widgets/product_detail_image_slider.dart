@@ -41,7 +41,7 @@ class EProductImageSlider extends StatelessWidget {
                   physics: const AlwaysScrollableScrollPhysics(),
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
-                  separatorBuilder: (_, __) =>
+                  separatorBuilder: (_, _) =>
                       const SizedBox(width: ESizes.spaceBtwItems),
                   itemCount: 10,
                   itemBuilder: (_, index) => ERoundedImage(

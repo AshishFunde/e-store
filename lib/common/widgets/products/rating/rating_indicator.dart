@@ -13,7 +13,7 @@ class ERatingBarIndicator extends StatelessWidget {
       rating: rating,
       itemSize: 20,
       unratedColor: EColors.grey,
-      itemBuilder: (_, __) => Icon(Iconsax.star1, color: EColors.primary),
+      itemBuilder: (_, _) => Icon(Iconsax.star1, color: EColors.primary),
     );
   }
 }

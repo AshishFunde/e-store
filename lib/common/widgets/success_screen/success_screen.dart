@@ -39,7 +39,7 @@ class SuccessScreen extends StatelessWidget {
 
               //button
               SizedBox(
-                width: double.infinity, // ✅ FIXED
+                width: double.infinity, 
                 child: ElevatedButton(
                onPressed: onPressed,
                 style: ElevatedButton.styleFrom(

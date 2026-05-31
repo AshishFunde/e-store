@@ -1,6 +1,9 @@
 import 'package:e_store/common/widgets/image_text_widgets/vertical_image_text.dart';
+import 'package:e_store/features/shop/screens/sub_category/subcategory.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 
 class EHomeCategories extends StatelessWidget {
   const EHomeCategories({
@@ -19,7 +22,7 @@ class EHomeCategories extends StatelessWidget {
           return EVerticalImageText(
             image: EImages.animalIcon,
             title: 'animals',
-            onTap: () {},
+            onTap: () => Get.to(()=> const SubCategoriesScreen()),
           );
         },
       ),

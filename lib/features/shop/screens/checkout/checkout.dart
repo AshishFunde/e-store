@@ -1,6 +1,5 @@
 import 'package:e_store/common/widgets/app_bar/appbar.dart';
 import 'package:e_store/common/widgets/custom_shapes/container/rounded_container.dart';
-import 'package:e_store/common/widgets/products/cart/cart_item.dart';
 import 'package:e_store/common/widgets/products/cart/coupon_widget.dart';
 import 'package:e_store/common/widgets/success_screen/success_screen.dart';
 import 'package:e_store/features/shop/screens/cart/widgets/cart_items.dart';
@@ -43,32 +42,43 @@ class CheckoutScreen extends StatelessWidget {
               ERoundedContainer(
                 padding: EdgeInsets.all(ESizes.md),
                 showBorder: true,
-                backgroundColor: dark?EColors.black:EColors.white ,
+                backgroundColor: dark ? EColors.black : EColors.white,
                 child: Column(
                   children: [
                     //Pricing
-                   EBilingAmountSection(),
+                    EBilingAmountSection(),
                     const SizedBox(height: ESizes.spaceBtwItems),
                     //Divider
                     Divider(),
                     const SizedBox(height: ESizes.spaceBtwItems),
                     //payment method
-                     EBilingPaymentSection(),
-                     const SizedBox(height: ESizes.spaceBtwItems),
+                    EBilingPaymentSection(),
+                    const SizedBox(height: ESizes.spaceBtwItems),
                     //Address
                     EBilingAddressSection(),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),
       ),
-       //CHeckout Button
-      bottomNavigationBar:Padding(
+      //CHeckout Button
+      bottomNavigationBar: Padding(
         padding: EdgeInsets.all(ESizes.defaultSpace),
-        child: ElevatedButton(onPressed: ()=>Get.to(()=>SuccessScreen(image: EImages.successdulPaymentIcon, title: 'Payment Successful', subTitle: 'Your Order will be Shipped soon', onPressed: () => const NavigationMenu(),) ),style: ElevatedButton.styleFrom(backgroundColor: EColors.primary), child: Text('Checkout \₹25000'))));
-    
+        child: ElevatedButton(
+          onPressed: () => Get.to(
+            () => SuccessScreen(
+              image: EImages.successdulPaymentIcon,
+              title: 'Payment Successful',
+              subTitle: 'Your Order will be Shipped soon',
+              onPressed: () =>Get.offAll(() => const NavigationMenu()),
+            ),
+          ),
+          style: ElevatedButton.styleFrom(backgroundColor: EColors.primary),
+          child: Text('Checkout ₹25000'),
+        ),
+      ),
+    );
   }
 }
-

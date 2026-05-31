@@ -26,23 +26,6 @@ class EBilingAddressSection extends StatelessWidget {
             Text('Saket Colony Durg,INDIA',style: Theme.of(context).textTheme.bodyMedium,softWrap: true,),
            
         ],),
-        
-        Row(
-          children: [
-            Icon(Icons.phone,color: Colors.grey,size:16),
-            SizedBox(width: ESizes.spaceBtwItems,),
-            Text('Saket Colony Durg,INDIA',style: Theme.of(context).textTheme.bodyMedium,softWrap: true,),
-           
-        ],),
-        
-        Row(
-          children: [
-            Icon(Icons.phone,color: Colors.grey,size:16),
-            SizedBox(width: ESizes.spaceBtwItems,),
-            Text('Saket Colony Durg,INDIA',style: Theme.of(context).textTheme.bodyMedium,softWrap: true,),
-           
-        ]),
-
       ],
     );
   }
